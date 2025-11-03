@@ -1,0 +1,39 @@
+@media only screen and (min-width: 40rem) {
+  header,
+  main,
+  nav,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /************************** NAVIGATION **************************/
+  #hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  nav a {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  nav li:last-child a {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+}
+
+/* end media query */

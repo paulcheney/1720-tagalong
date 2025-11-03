@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Cheney Portal | DWDD1720</title>
+    
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+
+    <!-- OPEN GRAPH DATA -->
+    <meta property="og:title" content="Invitation to Delicate Arch | Tag Along">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://paulcheney.github.io/dwdd1720/images/opengraph.jpg">
+    <meta property="og:logo" content="https://paulcheney.github.io/dwdd1720/images/logo.svg" />
+    <meta property="og:url" content="https://paulcheney.github.io/dwdd1720">
+    <meta property="og:description" content="Come join us for a hile to delicate arch on Saturday at 8:00am.">
+    <meta property="og:site_name" content="Invitation to Delicate Arch">
+
+    <!-- FAV ICON LINKS -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Invitation to Delicate Arch" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Tag Along Site Logo" width="1" height="1" loading="lazy">
+        <span>Tag Along</span>
+        <button id="hamburger" class="hamburger" aria-label="navigation links"></button>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li class="active"><a href="index.html">Hiking</a></li>
+            <li><a href="#">Game Night</a></li>
+            <li><a href="#">Night Skiing</a></li>
+            <li><a href="#">Siesta Beach</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Hiking Delicate Arch Trail</h1>
+        <!-- Responsive Hero Image  -->
+        <picture class="hero">
+            <source media="(max-width: 600px)" srcset="images/hero-600.webp">
+            <source media="(max-width: 1000px)" srcset="images/hero-1000.webp">
+            <img src="images/hero-1400.webp" alt="Hero Image of Delicate Arch">
+            <a href="#">Ask to Join</a>
+          </picture>
+
+        <h2>Description</h2>
+        <p>Delicate Arch Trail is a short hike in Arches National Park to Utah's most recognizable natural arch, which you will likely recognize from the Utah license plate. The park is home to some of the most unique geologic features in the world. This fantastic hiking trail leads along the red rock slabs to the largest free standing arch in the park. You'll pass smaller stone arches, piles of balanced rocks, and tall sandstone fins on your way to this incredible rocky feature.</p>
+        <p>The trailhead is at the end of the main road through the park. There is a large parking area, but during busy weekends it can be difficult to find parking.</p>
+        <h2>Cost</h2>
+        <p>$15.00 for a day pass to the park.</p>
+        <h2>When</h2>
+        <p>Meet at the East entrance on Saturday at 8:00am</p>
+
+          <h2>Invitation</h2>
+          <video controls poster="media/poster.webp" width="1280" height="720">
+            <source src="media/camelot.mp4" type="video/mp4">
+            <source src="media/camelot.webm" type="video/webm">
+            <track label="English" kind="subtitles" srclang="en" src="media/camelot-en.vtt" default>
+            <track label="Spanish" kind="subtitles" srclang="es" src="media/camelot-es.vtt">
+          </video>
+    
+          <details>
+            <summary>Video Transcript</summary>
+            <p>Welcome</p>
+          </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <section class="social">
+            
+            <a href="https://github.com/paulcheney" target="_blank"><img src="images/icon-github.svg" alt="GitHub Icon"></a>
+            <a href="https://www.linkedin.com/in/pcheney" target="_blank"><img src="images/icon-linkedin.svg" alt="Linked In Icon"></a>
+            <a href="https://www.youtube.com/@PaulCheney66" target="_blank"><img src="images/icon-youtube.svg" alt="Youtube Icon"></a>
+            <a href="https://www.facebook.com/paul.cheney.1422" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+        </section>
+        <p>&copy; <span id="currentyear"></span> • Paul Cheney • DWDD1720</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

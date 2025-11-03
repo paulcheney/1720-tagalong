@@ -1,0 +1,194 @@
+/* -------------- COLOR SCHEME ---------------
+primaryColor #698974;
+secondaryColor #0b5379
+*/
+
+
+* {
+    font-family: "Truculenta", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/************************** HEADER **************************/
+header {
+    padding: 10px 0 10px 10px;
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    align-items: end;
+    border-bottom: 1px solid  rgba(0,0,0,0.1);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: hsl(141, 13%, 47%);
+}
+
+
+/************************** NAVIGATION **************************/
+nav {
+    background-color: rgba(0,0,0,.05);
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #323232;
+    text-decoration: none;
+    padding: .4rem 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    color: #698974;
+}
+nav li.active a {
+    text-decoration: underline;
+    color: #0b5379;
+}
+nav.show {
+    display: block;
+}
+
+/************************** HAMBURGER NAVIGATION **************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #323232;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+
+
+/************************** MAIN LAYOUT **************************/
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2rem;
+    color: #0b5379;
+    font-weight: 300;
+    margin: 10px 10px 0 10px;
+}
+h2 {
+    font-size: 1.4rem;
+    color: #698974;
+    font-weight: 400;
+    margin: 15px 10px 0 10px;
+}
+p {
+    font-size: 1.rem;
+    color: #222;
+    font-weight: 200;
+    margin: 4px 10px 6px 10px;
+    line-height: 130%;
+}
+
+
+/************************** HERO IMAGE LAYOUT **************************/
+.hero {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.hero a {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #698974;
+    padding: 10px 20px;
+    border-radius: 99px;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 10px #222;
+    font-size: 5vw;
+    &:hover {
+        background-color: #0b5379;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************** SOCIAL MEDIA **************************/
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 1rem;
+}
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.5);
+}
+.social img {
+    width:22px;
+    height:22px;
+}
+.social a:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+/************************** FOOTER **************************/
+footer {
+    background-color: #698974;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: .25rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
